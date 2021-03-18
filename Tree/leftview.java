@@ -1,8 +1,7 @@
 package Tree;
 
 import java.util.ArrayList;
-import java.util.LinkedList;
-import java.util.Queue;
+
 
 
 public class leftview {
@@ -19,13 +18,13 @@ public class leftview {
         if(root==null)
             return ;
         
-        if(level>=max_level)
+        if(max_level<level)
         {
             list.add(root.data);
-            level++;
+            level = max_level;
         }
 
-        leftViewofTree(list, root.left, level);
-        leftViewofTree(list, root.right, level);
+        leftViewofTree(list, root.left, level+1);
+        leftViewofTree(list, root.right, level+1);
     }
 }
