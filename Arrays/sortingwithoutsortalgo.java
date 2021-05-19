@@ -1,4 +1,4 @@
-package Arrays;
+
 // Sort an array of 0s, 1s and 2s without using any sort algo
 import java.util.Scanner;
 

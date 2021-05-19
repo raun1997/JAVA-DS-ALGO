@@ -1,4 +1,3 @@
-package Arrays;
 // Rain water Trapping Question done
 import java.util.Scanner;
 import java.util.Stack;

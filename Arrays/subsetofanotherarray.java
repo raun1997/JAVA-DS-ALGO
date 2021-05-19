@@ -1,13 +1,13 @@
-package Arrays;
+
 
 import java.util.HashSet;
 import java.util.Scanner;
 
-import Hashing.Hashset;
+
 
 // Find whether an array is subset of another array
 public class subsetofanotherarray {
-    public static void main(String[] args) {
+    public static boolean main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
         int m = sc.nextInt();
