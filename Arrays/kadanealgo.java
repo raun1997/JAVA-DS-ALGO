@@ -13,14 +13,17 @@ public class kadanealgo {
     }
     static int Kdaanealgo(int a[], int n)
     {
-        int sum = 0, max_sum = 0;
-        for(int i=0;i<n;i++) {
-            sum += a[i];
-            if(max_sum < sum )
-             max_sum = sum;
-            if(max_sum < 0)
-             max_sum = 0;
+        int size = arr.length;
+        int maxsum = Integer.MIN_VALUE, sum = 0;
+ 
+        for (int i = 0; i < size; i++)
+        {
+            sum = sum + arr[i];
+            if (maxsum < sum)
+                maxsum = sum;
+            if (sum < 0)
+                sum = 0;
         }
-        return max_sum;
+        return maxsum;
     }
 }
